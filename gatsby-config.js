@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#1b1b1b`,
         theme_color: `#1b1b1b`,
         display: `standalone`,
-        icon: `src/images/profile-fullres-cropped.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/profile-fullres-cropped.jpeg`, // This path is relative to the root of the site.
       },
     },
     {
