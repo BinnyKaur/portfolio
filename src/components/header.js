@@ -58,7 +58,7 @@ const Header = ({ siteTitle, homepage }) => {
           >
             Portfolio
           </Button>
-          <Button component={Link} to='/impossiblelist' color='inherit'>
+          <Button component={Link} to='/resume' color='inherit'>
             Resume
           </Button>
         </Hidden>
