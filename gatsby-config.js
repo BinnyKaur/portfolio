@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://diogotc.com',
+        host: 'https://binny-kaur.netlify.app',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
