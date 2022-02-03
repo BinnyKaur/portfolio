@@ -4,7 +4,7 @@ module.exports = {
     shortTitle: `Binny Kaur`,
     description: `Hey, I'm Binny Kaur from India. I am a business analyst and love to use data to get more insight helping the businessess to grow. And always ready to learn new things`,
     author: `@binny-kaur`,
-    siteUrl: 'https://diogotc.com',
+    siteUrl: 'https://binny-kaur.netlify.app',
   },
   plugins: [
     `gatsby-plugin-top-layout`,
