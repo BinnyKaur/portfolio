@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import MobileNavigation from './mobileNavigation';
+import Pdf from '../resume/Binny_Resume.pdf';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
 const Header = ({ siteTitle, homepage }) => {
   const classes = useStyles();
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 100 });
+  const openInNewTab = () => {
+    const newWindow = window.open(Pdf, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
   return (
     <AppBar className={classnames({ [classes.root]: true, [classes.rootSplash]: !trigger })}>
       <Toolbar>
@@ -58,7 +63,7 @@ const Header = ({ siteTitle, homepage }) => {
           >
             Portfolio
           </Button>
-          <Button component={Link} to='/resume' color='inherit'>
+          <Button  onClick={openInNewTab} color='inherit'>
             Resume
           </Button>
         </Hidden>

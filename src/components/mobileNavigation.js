@@ -15,6 +15,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import AboutMeIcon from '@material-ui/icons/PersonRounded';
 import PortfolioIcon from '@material-ui/icons/BookRounded';
 import Resume from '@material-ui/icons/StarRounded';
+import Pdf from '../resume/Binny_Resume.pdf';
 
 const styles = (theme) => ({
   menuButton: {
@@ -37,6 +38,10 @@ class MobileNavigation extends Component {
 
   render() {
     const { classes, homepage } = this.props;
+    const openInNewTab = () => {
+      const newWindow = window.open(Pdf, '_blank', 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
+    }
     return (
       <div>
         <Hidden smUp>
@@ -79,8 +84,8 @@ class MobileNavigation extends Component {
               <ListItemText>Portfolio</ListItemText>
             </ListItem>
             <ListItem
-              component={Link}
-              to='/resume'
+              
+              onClick={openInNewTab}
               button
               activeClassName={classes.listItemActive}
             >

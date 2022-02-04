@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Container, Grid, Typography } from '@material-ui/core';
 import { Link } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Pdf from '../resume/Binny_Resume.pdf';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Footer = ({ homepage }) => {
   var classes = useStyles();
+  const openInNewTab = () => {
+    const newWindow = window.open(Pdf, '_blank', 'noopener,noreferrer')
+  }
   return (
     <footer className={classes.root}>
       <Container>
@@ -91,7 +95,7 @@ const Footer = ({ homepage }) => {
                 )}
               </Typography>
               <Typography variant='body2' component='li' className={classes.sitemapLink}>
-                <Link to='/resume'>Resume</Link>
+                <Link href={Pdf} target="_blank">Resume</Link>
               </Typography>
             </ul>
           </Grid>
