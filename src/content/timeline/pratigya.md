@@ -8,4 +8,4 @@ background: "#fff"
 foreground: "rgb(244, 67, 54)"
 ---
 
-I started volunteering for the society from third semester, we we would teach underprivileged children.
+With my keen interest in supporting society, I started volunteering for the society from third semester, we we would teach underprivileged children.

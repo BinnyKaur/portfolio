@@ -8,4 +8,4 @@ background: "#fff"
 foreground: "#000"
 ---
 
-In October 2019, I joinded Grofers now known as Blinkit with a goal to enhance my skills in data analytics and supply chain management.
+In October 2019, I joinded Grofers now known as Blinkit with a goal to enhance my skills in data analytics and supply chain management. Being working in startup, it gave me opportunity to work on new projects, exploring ideas to live upto our customer expectations.
